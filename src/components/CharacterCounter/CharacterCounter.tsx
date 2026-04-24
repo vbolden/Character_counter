@@ -4,20 +4,22 @@ import StatsDisplay from "../StatsDisplay/StatsDisplay";
 import { useState } from "react";
 
 const CharacterCounter: React.FC<CharacterCounterProps> = ({
-    minWords,
-    maxWords,
-    targetReadingTime,
+    minWords = 25,
+    maxWords = 100,
+    targetReadingTime = 5,
 }) => {
     const [text, setText] = useState("");
 
     const calculateStats = (input: string): TextStats => {
         const characterCount = input.length;
 
-        const words = input.trim() === "" ? [] : input.trim().split(/\s+/);
+        const words = input.trim() === "" 
+        ? [] 
+        : input.trim().split(/\s+/); // SPLIT BY WHITESPACE
 
         const wordCount = words.length;
 
-        const readingTime = wordCount / 200; // AVERAGE READING SPEED
+        const readingTime = wordCount / 225; // ROUND UP TO NEAREST MINUTE
 
         return {
             characterCount,

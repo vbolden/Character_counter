@@ -19,7 +19,7 @@ const CharacterCounter: React.FC<CharacterCounterProps> = ({
 
         const wordCount = words.length;
 
-        const readingTime = wordCount / 225; // ROUND UP TO NEAREST MINUTE
+        const readingTime = wordCount / 225; // AVERAEGE READING SPEED
 
         return {
             characterCount,

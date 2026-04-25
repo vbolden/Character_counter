@@ -6,6 +6,7 @@ An interactive character counter application that demonstrates state management 
 
 - Module Lessons
 - Google
+- MDN (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 - React.dev (https://react.dev/learn/sharing-state-between-components)
 
 # REFLECTION
@@ -15,4 +16,4 @@ An interactive character counter application that demonstrates state management 
 
 3. By using local state management to only store one state and have everything else derived which avoids re-rendering and synchronization issues. 
 
-4. 
+4. A challenge I faced was accurately counting the words. I knew I would have to use array methods and copilot gave a suggestion of using trim and split so I looked it up in MDN to make sure it was correct, and when I tested it the code worked. 
